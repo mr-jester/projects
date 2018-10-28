@@ -16,7 +16,7 @@ const conn = mysql.createConnection({
 });
 
 app.get ('/',(req,res) =>{
-  res.sendfile(path.join(__dirname,'login.html'))
+  res.sendFile(path.join(__dirname,'login.html'))
 });
 
 app.listen(PORT,() =>{
